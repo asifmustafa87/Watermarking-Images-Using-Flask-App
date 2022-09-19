@@ -20,7 +20,8 @@ Adding a watermark on an image works as copyright. Different organizations can u
 
 Stpes to run the project:
 1. Clone the project `$git clone https://github.com/asifmustafa87/Watermarking-Images-Using-Flask-App.git`
-2. Run the Docker demon a
+2. Change the directory `$cd Watermarking-Images-Using-Flask-App`
+2. Run the Docker Daemon
 3. In the terminal/git bash type to create docker image `$docker build -t watermarking_flask_app .`
 4. TO check whether the image created correctly `$ docker images`
 5. Create the Docker container `$docker run -d -p 5000:5000 watermarking_flask_app:latest`
