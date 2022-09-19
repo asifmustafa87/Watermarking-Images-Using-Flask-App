@@ -23,6 +23,6 @@ Stpes to run the project:
 2. Change the directory `$cd Watermarking-Images-Using-Flask-App`
 2. Run the Docker Daemon
 3. In the terminal/git bash type to create docker image `$docker build -t watermarking_flask_app .`
-4. TO check whether the image created correctly `$ docker images`
+4. TO check whether the image created correctly `$docker images`
 5. Create the Docker container `$docker run -d -p 5000:5000 watermarking_flask_app:latest`
 6. The broser should open automatically. If not, open the browser and type "127.0.0.1:5000" and the app will run perfectly.
