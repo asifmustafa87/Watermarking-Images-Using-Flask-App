@@ -1,7 +1,7 @@
 """Main File to run the whole function"""
 # Important imports
 import os
-from flask import Flask, request, render_template
+from flask import Flask, request, render_template, send_file, send_from_directory, current_app
 import cv2
 import numpy as np
 from PIL import Image
@@ -71,7 +71,19 @@ def index():
             full_filename = "uploads/image1.png"
             return render_template("index.html", full_filename=full_filename)
 
+# Viewing the image
+@app.route('/static/<full_filename>', methods=['GET', 'POST'])
+def download():
+    if request.method == "POST":
+        option = request.form["options"]
+        if option == "logo_watermark":
+            full_filename = "image.png"
+        elif option == "text_mark":
+            full_filename = "image1.png"
+        else:
+            return render_template("index.html")
+    return send_file(full_filename, as_attachment=True)
 
-# Main function
+
 if __name__ == "__main__":
     app.run(debug=True)
