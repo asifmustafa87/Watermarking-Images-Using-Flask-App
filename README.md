@@ -19,10 +19,10 @@ Steps to solve the problems:
 Adding a watermark on an image works as copyright. Different organizations can use it to make their content secure so that their content cannot be misused without their license. 
 
 Stpes to run the project:
-1. Clone the project `$git clone https://github.com/asifmustafa87/Watermarking-Images-Using-Flask-App.git`
-2. Change the directory `$cd Watermarking-Images-Using-Flask-App`
-2. Run the Docker Daemon
-3. In the terminal/git bash type to create docker image `$docker build -t watermarking_flask_app .`
-4. TO check whether the image created correctly `$docker images`
-5. Create the Docker container `$docker run -d -p 5000:5000 watermarking_flask_app:latest`
-6. The browser should open automatically. If not, open the browser and type "127.0.0.1:5000" and the app will run perfectly.
+1. Make sure your Docker Daemon is running.
+2. Clone the project `$git clone https://github.com/asifmustafa87/Watermarking-Images-Using-Flask-App.git`
+3. Change the directory `$cd Watermarking-Images-Using-Flask-App`
+4. In the terminal/git bash type to create docker image `$docker build -t watermarking_flask_app .`
+5. To check whether the image created correctly or not `$docker images` You will see the image has been created successfully.
+6. Create the Docker container `$docker run -p 5000:5000 -t -i watermarking_flask_app:latest`
+7. The browser should open automatically. If not, open the browser and type "127.0.0.1:5000" or "localhost:5000" and the app will run perfectly.
