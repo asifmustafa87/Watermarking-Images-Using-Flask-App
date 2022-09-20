@@ -49,8 +49,8 @@ def index():
             image_logow[top_y:bottom_y, left_x:right_x] = result
 
             img = Image.fromarray(image_logow, "RGB")
-            img.save(os.path.join(app.config["INITIAL_FILE_UPLOADS"], "image.png"))
-            full_filename = "uploads/image.png"
+            img.save(os.path.join(app.config["INITIAL_FILE_UPLOADS"], "image.jpg"))
+            full_filename = "uploads/image.jpg"
             return render_template("index.html", full_filename=full_filename)
 
         else:
@@ -67,8 +67,8 @@ def index():
                 lineType=cv2.LINE_4,
             )
             timg = Image.fromarray(image_logow, "RGB")
-            timg.save(os.path.join(app.config["INITIAL_FILE_UPLOADS"], "image1.png"))
-            full_filename = "uploads/image1.png"
+            timg.save(os.path.join(app.config["INITIAL_FILE_UPLOADS"], "image1.jpg"))
+            full_filename = "uploads/image1.jpg"
             return render_template("index.html", full_filename=full_filename)
 
 
@@ -78,9 +78,9 @@ def download():
     if request.method == "POST":
         option = request.form["options"]
         if option == "logo_watermark":
-            full_filename = "image.png"
+            full_filename = "image.jpg"
         elif option == "text_mark":
-            full_filename = "image1.png"
+            full_filename = "image1.jpg"
         else:
             return render_template("index.html")
     return send_file(full_filename, as_attachment=True)
