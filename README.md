@@ -45,3 +45,4 @@ Adding a watermark works as copyright for image so that no one can illegally use
 7. The browser should open automatically. If not, open the browser and type "127.0.0.1:5000" or "localhost:5000" and the app will run perfectly.
 
 
+<h3>N.B. :I do not own the images. I have used the images from google for educational purpose only. No intention to do business or anything.</h3>
