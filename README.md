@@ -1,6 +1,14 @@
 # Watermarking-Images-Using-Flask-App
 [![flake8-Linter](https://github.com/asifmustafa87/Watermarking-Images-Using-Flask-App/actions/workflows/flake8-linter.yml/badge.svg)](https://github.com/asifmustafa87/Watermarking-Images-Using-Flask-App/actions/workflows/flake8-linter.yml)
 
+# Web Interface
+![Flask_App](https://github.com/asifmustafa87/Watermarking-Images-Using-Flask-App/blob/main/static/uploads/web-interface.png)
+
+# Sample images to check out the Images with Logos
+![Image_wit_logo](https://github.com/asifmustafa87/Watermarking-Images-Using-Flask-App/blob/main/static/uploads/image.jpg)
+![Image_wit_text](https://github.com/asifmustafa87/Watermarking-Images-Using-Flask-App/blob/main/static/uploads/image1.jpg)
+
+# Why Adding Watermark to images 
 Adding a watermark works as copyright for image so that no one can illegally use the image or document. I have used OpenCV for this project to add logo and text as a watermark. Different organizations can use it to make their content secure so that their content cannot be misused without their license. 
 
 
@@ -27,6 +35,4 @@ Stpes to run the project:
 6. Create the Docker container `$docker run -p 5000:5000 -t -i watermarking_flask_app:latest`
 7. The browser should open automatically. If not, open the browser and type "127.0.0.1:5000" or "localhost:5000" and the app will run perfectly.
 
-# Sample images to check out the Images with Logos
-![Image_wit_logo](https://github.com/asifmustafa87/Watermarking-Images-Using-Flask-App/blob/main/static/uploads/image.jpg)
-![Image_wit_text](https://github.com/asifmustafa87/Watermarking-Images-Using-Flask-App/blob/main/static/uploads/image1.jpg)
+
