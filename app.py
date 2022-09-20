@@ -71,6 +71,7 @@ def index():
             full_filename = "uploads/image1.png"
             return render_template("index.html", full_filename=full_filename)
 
+
 # Viewing the image
 @app.route('/static/<full_filename>', methods=['GET', 'POST'])
 def download():
