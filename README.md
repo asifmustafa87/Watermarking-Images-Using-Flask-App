@@ -37,10 +37,10 @@ Adding a watermark works as copyright for image so that no one can illegally use
 <h3>Stpes to run the project:</h3>
 
 1. Make sure your Docker Daemon is running.
-2. Clone the project `$git clone https://github.com/asifmustafa87/Watermarking-Images-Using-Flask-App.git`
-3. Change the directory `$cd Watermarking-Images-Using-Flask-App`
-4. In the terminal/git bash type to create docker image `$docker build -t watermarking_flask_app .`
-5. To check whether the image created correctly or not `$docker images` You will see the image has been created successfully.
+2. Clone the project: `$git clone https://github.com/asifmustafa87/Watermarking-Images-Using-Flask-App.git`
+3. Change the directory to Watermarking-Images-Using-Flask-App: `$cd Watermarking-Images-Using-Flask-App`
+4. Create docker image named watermarking_flask_app: `$docker build -t watermarking_flask_app .`
+5. To check whether the image created correctly or not: `$docker images` 
 6. Create the Docker container `$docker run -p 5000:5000 -t -i watermarking_flask_app:latest`
 7. The browser should open automatically. If not, open the browser and type "127.0.0.1:5000" or "localhost:5000" and the app will run perfectly.
 
